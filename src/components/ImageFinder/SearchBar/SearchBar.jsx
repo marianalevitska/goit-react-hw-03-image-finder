@@ -1,5 +1,6 @@
 import { Component } from 'react';
 import stl from './searchBar.module.css';
+import PropTypes from 'prop-types';
 
 class SearchBar extends Component {
   state = {
