@@ -11,4 +11,9 @@ function Button({ onLoad, title }) {
   );
 }
 
+Button.propTypes = {
+  onLoad: PropTypes.func.isRequired,
+  title: PropTypes.string.isRequired,
+};
+
 export default Button;
