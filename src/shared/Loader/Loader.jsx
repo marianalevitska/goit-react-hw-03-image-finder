@@ -1,10 +1,20 @@
-import PropTypes from 'prop-types';
-import stl from './loader.module.css';
+import { Component } from 'react';
+import { SlidingPebbles } from 'react-spinner-animated';
 
-function Loader() {
+import 'react-spinner-animated/dist/index.css';
+
+class Loader extends Component {
+  render() {
     return (
-        <div className={stl.loader}></div>
-    )
+      <SlidingPebbles
+        text={'Loading...'}
+        bgColor={'transparent'}
+        center={true}
+        width={'150px'}
+        height={'150px'}
+      />
+    );
+  }
 }
 
 export default Loader;

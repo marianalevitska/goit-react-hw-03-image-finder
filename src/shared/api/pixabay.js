@@ -1,10 +1,10 @@
 import axios from 'axios';
-const { API_KEY } = process.env;
+// const { API_KEY } = process.env;
 
 const instance = axios.create({
     baseURL: 'https://pixabay.com/api',
     params: {
-        key: API_KEY,
+        key: '28838942-7a8bee207b844890a62446b40',
         image_type: 'photo',
         orientation: 'horizontal',
         per_page: 12
