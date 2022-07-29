@@ -23,6 +23,12 @@ class ImageFinder extends Component {
 
   async componentDidUpdate(prevProp, prevState) {
     const { q, page } = this.state;
+    if (!q.trim().length) {
+      alert(
+        'Життя окремої людини має сенс лише тоді, коли вона знає, що хоче знайти'
+      );
+      return;
+    }
     if (q !== prevState.q) {
       this.setState({ isLoading: true });
       try {
